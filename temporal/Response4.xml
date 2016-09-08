@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Promise OrderDate="2016-09-08T02:10:00-04:00" OrderNo="Y100082229">
+    <PromiseLines>
+        <PromiseLine ItemID="92800366" LineId="201609080732193165119126">
+            <PossibleAssignments>
+                <Assignment AssignmentKey="859::::20160908000000" RejectChoice="N">
+                    <Costs AssignmentPriority="1"/>
+                </Assignment>
+                <Assignment AssignmentKey="869::::20160908000000" RejectChoice="Y"/>
+            </PossibleAssignments>
+        </PromiseLine>
+    </PromiseLines>
+</Promise>
+
