@@ -5,9 +5,7 @@ import org.xml.sax.XMLReader;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by os344312 on 9/8/2016.
@@ -31,8 +29,9 @@ public class XMLParser {
         return "file:" + path;
     }
 
-    public Map<String,String> parseFile()  {
-        Map<String,String> map=null;
+    public ArrayList<HashMap<String,String>> parseFile()  {
+        HashMap<String,String> map=new HashMap<String, String>();
+        ArrayList<HashMap<String,String>> arrayList=new ArrayList<HashMap<String,String>>();
         try {
             //Create a JAX parser factory and configure it
             SAXParserFactory _pf = SAXParserFactory.newInstance();
@@ -55,12 +54,16 @@ public class XMLParser {
             List<SourceXML> attributeList = myHandler.getAttributeList();
             if (attributeList.size()>0)
             {
-                map = new HashMap<>();
+                //map = new HashMap<String,String>();
                 for(SourceXML attribute: attributeList){
-                    map.put("Index",attribute.getOrderReference()+"_"+attribute.getAssignmentKey());
-                    map.put("OrderNo",attribute.getOrderReference());
-                    map.put("AssignmentKey",attribute.getAssignmentKey());
-                    map.put("RejectChoice",attribute.getRejectChoice());
+                    HashMap<String,String> map1=new HashMap<String, String>();
+                    map1.put("dIndex",attribute.getOrderReference()+"_"+attribute.getAssignmentKey());
+                    map1.put("aOrderNo",attribute.getOrderReference());
+                    map1.put("bAssignmentKey",attribute.getAssignmentKey());
+                    map1.put("cRejectChoice",attribute.getRejectChoice());
+                    map1.put("eChecked","false");
+                    Set<Map.Entry<String,String>> set = map1.entrySet();
+                    arrayList.add(map1);
                 }
             }
         }catch (ArrayIndexOutOfBoundsException e){
@@ -68,7 +71,7 @@ public class XMLParser {
         }catch (Exception ex){
             ex.printStackTrace();
         }
-        return map;
+        return arrayList;
     }
 
     public String getFileName() {

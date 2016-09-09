@@ -7,26 +7,25 @@
     DetermineHighestPriorityNodeForBackOrderedQty="N"
     DistanceToConsider="-1.00" DistanceUOMToConsider=""
     EnterpriseCode="KOHLS.COM"
-    ExpirationDate="2016-09-08T06:58:31-05:00"
+    ExpirationDate="2016-09-08T07:01:18-05:00"
     IgnoreMinNotificationTime="N" IgnorePromised="N"
     IgnoreUnpromised="Y" InvokeOptimizerFlag="Y" IsIntendToUpdate="Y"
     IsPartialSubstitutionAllowed="N" IsScheduleOrReleaseMode="Y"
     IsSubstitutionAllowed="Y" MaximumRecords="5" OptimizationType="03"
-    OrderDate="2016-09-08T01:10:00-05:00" OrderReference="Y100082216"
+    OrderDate="2016-09-08T01:10:00-05:00" OrderReference="Y100082218"
     OrganizationCode="KOHLS.COM" QueryTimeout="600" ReqEndDate=""
     ReqStartDate="" ReturnMultipleSrvcSlots="N"
     ReturnSlotsWithUnavailableCapacity="N"
     SourcingClassification="INBALANCE" TimeoutLockedUpdates="Y" UseUnplannedInventory="">
     <PromiseLines>
-        <PromiseLine CarrierServiceCode="Standard Ground"
-            DeliveryMethod="SHP" ItemID="92800366"
-            LineId="201609080682581165112314" ProductClass="Good"
-            RequiredQty="50.00" UnitOfMeasure="EACH">
+        <PromiseLine CarrierServiceCode="1BUSDAY" DeliveryMethod="SHP"
+            ItemID="92800366" LineId="201609080796010165113972"
+            ProductClass="Good" RequiredQty="50.00" UnitOfMeasure="EACH">
             <ShipToAddress Country="US"
                 PersonInfoKey="20160331022300148306919" State="CA" ZipCode="92408"/>
             <PossibleAssignments>
                 <Assignment AssignmentKey="859::::20160908000000"
-                    Capacity="100000000.00" CapacityConsumed="200080.00"
+                    Capacity="100000000.00" CapacityConsumed="200180.00"
                     CapacityUnitOfMeasure="UNIT"
                     CapacityUtilization="0.20" Distance="2289.002030924"
                     IsExternalNode="N" Quantity="50.00" ShipNode="859">
@@ -36,7 +35,7 @@
                         NodeShippingCapacityCostPerUnit="0.80" OutboundShipmentHandlingCostPerUnit="0.00"/>
                 </Assignment>
                 <Assignment AssignmentKey="869::::20160908000000"
-                    Capacity="100000000.00" CapacityConsumed="500.00"
+                    Capacity="100000000.00" CapacityConsumed="2000.00"
                     CapacityUnitOfMeasure="UNIT"
                     CapacityUtilization="0.00"
                     Distance="1883.5527835094" IsExternalNode="N"

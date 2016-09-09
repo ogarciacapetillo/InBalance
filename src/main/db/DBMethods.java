@@ -5,12 +5,12 @@ import main.db_interface.TestDataQueries;
 import main.utils.FileManagement;
 import main.utils.PropertyLoader;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by OS344312 on 9/7/2016.
@@ -30,10 +30,33 @@ public class DBMethods implements TestDataQueries {
 
     public DBMethods(){
         this.connection = null;
+        try {
+            purgeDirectory(System.getProperty("user.dir") + "\\temporal");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //FileManagement fm = new FileManagement();
         //fm.purgeDirectory((File) (System.getProperty("user.dir") + "\\temporal"));
     }
 
+    private static void purgeDirectory(String resourceLocation) throws IOException {
+        File resourceFolder = new File(resourceLocation);
+        File[] listOfFiles = resourceFolder.listFiles();
+        String propReg = "([\\w\\d]+)*\\.xml";
+        try{
+            for(File file:listOfFiles){
+                if (file.delete()){
+                    //System.out.println("file deleted: "+file.getName());
+                }else{
+                    System.out.println("Error");
+                }
+            }
+        }catch (Exception e){
+
+        }
+
+
+    }
     private int checkDriver(){
 
         try{
@@ -87,9 +110,9 @@ public class DBMethods implements TestDataQueries {
         return list;
     }
 
-    public ArrayList<Map<String,String>> getRequestMessage() {
-        Map<String,String> mapReq=null;
-        ArrayList<Map<String,String>> list=new ArrayList<>();
+    public ArrayList<ArrayList<HashMap<String, String>>> getRequestMessage() {
+        ArrayList<HashMap<String,String>> list=new ArrayList<HashMap<String, String>>();
+        ArrayList<ArrayList<HashMap<String, String>>> fatherList = new  ArrayList<ArrayList<HashMap<String, String>>>();
         PreparedStatement inbalance = null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -101,8 +124,9 @@ public class DBMethods implements TestDataQueries {
                 iCount++;
                 String requestXML = resultSet.getString("MESSAGE");
                 fm.createRequestFile(requestXML,iCount);
-                mapReq= fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(iCount)+".xml");
-                list.add(mapReq);
+                list= fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(iCount)+".xml");
+                fatherList.add(list);
+                //list.add(mapReq);
                 //System.out.println(requestXML);
             }
             //ArrayList<HashMap> list = resultSetToArrayList(resultSet);
@@ -111,14 +135,13 @@ public class DBMethods implements TestDataQueries {
             //return list;
         }catch (SQLException ex){
             //return null;
-        }finally {
-            return list;
         }
+        return fatherList;
     }
 
-    public ArrayList<Map<String,String>> getResponseMessage(){
-        Map<String,String> mapRes=null;
-        ArrayList<Map<String,String>> list=new ArrayList<>();
+    public ArrayList<ArrayList<HashMap<String, String>>> getResponseMessage(){
+        ArrayList<HashMap<String,String>> list=new ArrayList<>();
+        ArrayList<ArrayList<HashMap<String, String>>> fatherList = new  ArrayList<ArrayList<HashMap<String, String>>>();
         PreparedStatement sRespose=null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -129,9 +152,15 @@ public class DBMethods implements TestDataQueries {
             while (resultSet.next()){
                 iCount++;
                 String responseXML = resultSet.getString("MESSAGE");
+                // Check the leng of the XML file
+                if (responseXML.length()<50){
+                    // Error file not properly build
+                    break;
+                }
                 fm.createResponseFile(responseXML,iCount);
-                mapRes=fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(iCount)+".xml");
-                list.add(mapRes);
+                list=fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(iCount)+".xml");
+                fatherList.add(list);
+                //list.add(mapRes);
                 //System.out.println(requestXML);
             }
 
@@ -141,7 +170,7 @@ public class DBMethods implements TestDataQueries {
         }catch (SQLException ex){
 
         }
-        return list;
+        return fatherList;
 
     }
 

@@ -4,6 +4,7 @@ import main.utils.HashMapCompare;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -11,8 +12,8 @@ import java.util.Map;
  */
 public class InBalance {
 
-    static ArrayList<Map<String,String>> requestMap;
-    static ArrayList<Map<String,String>> responseMap;
+    static ArrayList<ArrayList<HashMap<String, String>>> requestMap;
+    static ArrayList<ArrayList<HashMap<String, String>>> responseMap;
 
     /*public static final PropertyLoader property= new PropertyLoader();
 
@@ -36,3 +37,4 @@ public class InBalance {
     }
 
 }
+

@@ -39,7 +39,7 @@ public class Handler extends DefaultHandler {
     boolean bOrderRef = false;
     boolean bOrderNo = false;
     boolean bAssigmentKey = false;
-    boolean bRejectChoice = false;
+
 
     // Parser calls this for each element in a document
     public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {

@@ -3,6 +3,8 @@ package main.utils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -34,14 +36,18 @@ public class FileManagement {
         }
     }
 
-    public void purgeDirectory(File dir){
-        for (File file: dir.listFiles()) {
-            if (file.isDirectory()) purgeDirectory(file);
-            file.delete();
+    public void createResultfile(String result){
+        try{
+            PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "\\temporal\\Result.csv");
+            out.print(result);
+            out.flush();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
-    public Map<String,String > parseFile(String fileName){
+    public ArrayList<HashMap<String,String>> parseFile(String fileName){
         XMLParser xmlParser = new XMLParser(fileName);
         return xmlParser.parseFile();
     }

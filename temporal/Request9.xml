@@ -7,32 +7,32 @@
     DetermineHighestPriorityNodeForBackOrderedQty="N"
     DistanceToConsider="-1.00" DistanceUOMToConsider=""
     EnterpriseCode="KOHLS.COM"
-    ExpirationDate="2016-09-08T07:07:59-05:00"
+    ExpirationDate="2016-09-08T07:15:07-05:00"
     IgnoreMinNotificationTime="N" IgnorePromised="N"
     IgnoreUnpromised="Y" InvokeOptimizerFlag="Y" IsIntendToUpdate="Y"
     IsPartialSubstitutionAllowed="N" IsScheduleOrReleaseMode="Y"
     IsSubstitutionAllowed="Y" MaximumRecords="5" OptimizationType="03"
-    OrderDate="2016-09-08T01:10:00-05:00" OrderReference="Y100082222"
+    OrderDate="2016-09-08T01:10:00-05:00" OrderReference="Y100082226"
     OrganizationCode="KOHLS.COM" QueryTimeout="600" ReqEndDate=""
     ReqStartDate="" ReturnMultipleSrvcSlots="N"
     ReturnSlotsWithUnavailableCapacity="N"
     SourcingClassification="INBALANCE" TimeoutLockedUpdates="Y" UseUnplannedInventory="">
     <PromiseLines>
         <PromiseLine CarrierServiceCode="1BUSDAY" DeliveryMethod="SHP"
-            ItemID="92800366" LineId="201609080732074165115363"
+            ItemID="92800366" LineId="201609080711145165118134"
             ProductClass="Good" RequiredQty="50.00" UnitOfMeasure="EACH">
             <ShipToAddress Country="US"
                 PersonInfoKey="20160331022300148306919" State="CA" ZipCode="92408"/>
             <PossibleAssignments>
                 <Assignment AssignmentKey="859::::20160908000000"
-                    Capacity="100000000.00" CapacityConsumed="210280.00"
+                    Capacity="100000000.00" CapacityConsumed="215335.00"
                     CapacityUnitOfMeasure="UNIT"
-                    CapacityUtilization="0.21" Distance="2289.002030924"
+                    CapacityUtilization="0.22" Distance="2289.002030924"
                     IsExternalNode="N" Quantity="50.00" ShipNode="859">
                     <Costs Currency="USD"
                         ItemInventoryCostPerUnit="0.00"
                         NodePriorityCostPerUnit="45.78"
-                        NodeShippingCapacityCostPerUnit="0.84" OutboundShipmentHandlingCostPerUnit="0.00"/>
+                        NodeShippingCapacityCostPerUnit="0.88" OutboundShipmentHandlingCostPerUnit="0.00"/>
                 </Assignment>
                 <Assignment AssignmentKey="869::::20160908000000"
                     Capacity="100000000.00" CapacityConsumed="2000.00"
