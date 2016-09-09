@@ -50,8 +50,14 @@ public class Handler extends DefaultHandler {
                 attributesByOrder = new ArrayList<>();
             }
             orderNo =getAttribute(atts,"OrderReference");
-            request.setOrderReference(orderNo);
-            System.out.println("OrderNo: " +getAttribute(atts,"OrderReference"));
+            if (orderNo.length()>0){
+                request.setOrderReference(orderNo);
+            }else{
+                // would be parsing the response xml most likely
+                orderNo =getAttribute(atts,"OrderNo");
+                request.setOrderReference(orderNo);
+            }
+            System.out.println("OrderNo: " +orderNo);
             bOrderRef = true;
         }else if(key.equalsIgnoreCase("Assignment")){
             request.setOrderReference(orderNo);

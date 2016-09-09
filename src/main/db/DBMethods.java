@@ -87,8 +87,9 @@ public class DBMethods implements TestDataQueries {
         return list;
     }
 
-    public Map<String,String> getRequestMessage() {
+    public ArrayList<Map<String,String>> getRequestMessage() {
         Map<String,String> mapReq=null;
+        ArrayList<Map<String,String>> list=new ArrayList<>();
         PreparedStatement inbalance = null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -101,6 +102,7 @@ public class DBMethods implements TestDataQueries {
                 String requestXML = resultSet.getString("MESSAGE");
                 fm.createRequestFile(requestXML,iCount);
                 mapReq= fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(iCount)+".xml");
+                list.add(mapReq);
                 //System.out.println(requestXML);
             }
             //ArrayList<HashMap> list = resultSetToArrayList(resultSet);
@@ -110,12 +112,13 @@ public class DBMethods implements TestDataQueries {
         }catch (SQLException ex){
             //return null;
         }finally {
-            return mapReq;
+            return list;
         }
     }
 
-    public Map<String,String> getResponseMessage(){
+    public ArrayList<Map<String,String>> getResponseMessage(){
         Map<String,String> mapRes=null;
+        ArrayList<Map<String,String>> list=new ArrayList<>();
         PreparedStatement sRespose=null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -128,16 +131,17 @@ public class DBMethods implements TestDataQueries {
                 String responseXML = resultSet.getString("MESSAGE");
                 fm.createResponseFile(responseXML,iCount);
                 mapRes=fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(iCount)+".xml");
+                list.add(mapRes);
                 //System.out.println(requestXML);
             }
-            ArrayList<HashMap> list = resultSetToArrayList(resultSet);
-            System.out.println(list);
+
+            //ArrayList<HashMap> list = resultSetToArrayList(resultSet);
+            //System.out.println(list);
             closeOpenConnections();
         }catch (SQLException ex){
 
-        }finally {
-            return mapRes;
         }
+        return list;
 
     }
 

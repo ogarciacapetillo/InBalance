@@ -1,7 +1,9 @@
 package main;
 import main.db.DBMethods;
+import main.utils.HashMapCompare;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Map;
 
 /**
@@ -9,8 +11,8 @@ import java.util.Map;
  */
 public class InBalance {
 
-    static Map<String,String> requestMap;
-    static Map<String,String> responseMap;
+    static ArrayList<Map<String,String>> requestMap;
+    static ArrayList<Map<String,String>> responseMap;
 
     /*public static final PropertyLoader property= new PropertyLoader();
 
@@ -24,7 +26,10 @@ public class InBalance {
         DBMethods dbMethods;
         dbMethods = new DBMethods();
         requestMap = dbMethods.getRequestMessage();
+        System.out.println("-----------------------------------------");
         responseMap = dbMethods.getResponseMessage();
+        HashMapCompare comparator = new HashMapCompare();
+        comparator.compareMaps(requestMap,responseMap);
         System.out.println(requestMap.size());
         System.out.println(responseMap.size());
         System.out.print("Complete");

@@ -62,16 +62,13 @@ public class XMLParser {
                     map.put("AssignmentKey",attribute.getAssignmentKey());
                     map.put("RejectChoice",attribute.getRejectChoice());
                 }
-
             }
-
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("ArrayIndexOutOfBoundsException caught");
         }catch (Exception ex){
             ex.printStackTrace();
-        }finally {
-            return map;
         }
+        return map;
     }
 
     public String getFileName() {
