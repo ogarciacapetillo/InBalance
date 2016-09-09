@@ -27,6 +27,7 @@ public class InBalance {
         responseMap = dbMethods.getResponseMessage();
         System.out.println(requestMap.size());
         System.out.println(responseMap.size());
+        System.out.print("Complete");
     }
 
 }
