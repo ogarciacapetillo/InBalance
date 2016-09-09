@@ -1,6 +1,4 @@
-package db_interface;
-
-import utils.PropertyLoader;
+package main.db_interface;
 
 /**
  * Created by os344312 on 9/7/2016.

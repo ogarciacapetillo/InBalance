@@ -1,4 +1,4 @@
-package utils;
+package main.utils;
 
 /**
  * Created by os344312 on 9/8/2016.

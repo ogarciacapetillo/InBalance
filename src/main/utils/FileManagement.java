@@ -1,9 +1,9 @@
-package utils;
+package main.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.InterruptedIOException;
 import java.io.PrintWriter;
+import java.util.Map;
 
 /**
  * Created by os344312 on 9/8/2016.
@@ -12,10 +12,11 @@ public class FileManagement {
 
     public void createRequestFile(String xmlString, int index){
         try{
-            PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(index)+".xml");
-            out.println(xmlString);
-            out.flush();
-            out.close();
+            try (PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "\\temporal\\" + "Request" + Integer.toString(index) + ".xml")) {
+                out.println(xmlString);
+                out.flush();
+                out.close();
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -23,10 +24,11 @@ public class FileManagement {
 
     public void createResponseFile(String xmlString, int index){
         try{
-            PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(index)+".xml");
-            out.println(xmlString);
-            out.flush();
-            out.close();
+            try (PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "\\temporal\\" + "Response" + Integer.toString(index) + ".xml")) {
+                out.println(xmlString);
+                out.flush();
+                out.close();
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -39,7 +41,8 @@ public class FileManagement {
         }
     }
 
-    public void parseFile(String fileName){
+    public Map<String,String > parseFile(String fileName){
         XMLParser xmlParser = new XMLParser(fileName);
+        return xmlParser.parseFile();
     }
 }

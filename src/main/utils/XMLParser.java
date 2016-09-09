@@ -1,4 +1,4 @@
-package utils;
+package main.utils;
 
 import org.xml.sax.XMLReader;
 
@@ -18,7 +18,6 @@ public class XMLParser {
 
     public XMLParser(String fileName){
         this.setFileName(fileName);
-        parseFile();
     }
 
     private String convertToFileURL() {
@@ -32,7 +31,8 @@ public class XMLParser {
         return "file:" + path;
     }
 
-    private void parseFile()  {
+    public Map<String,String> parseFile()  {
+        Map<String,String> map=null;
         try {
             //Create a JAX parser factory and configure it
             SAXParserFactory _pf = SAXParserFactory.newInstance();
@@ -55,8 +55,9 @@ public class XMLParser {
             List<SourceXML> attributeList = myHandler.getAttributeList();
             if (attributeList.size()>0)
             {
-                Map<String, String> map = new HashMap<>();
+                map = new HashMap<>();
                 for(SourceXML attribute: attributeList){
+                    map.put("Index",attribute.getOrderReference()+"_"+attribute.getAssignmentKey());
                     map.put("OrderNo",attribute.getOrderReference());
                     map.put("AssignmentKey",attribute.getAssignmentKey());
                     map.put("RejectChoice",attribute.getRejectChoice());
@@ -68,8 +69,9 @@ public class XMLParser {
             System.out.println("ArrayIndexOutOfBoundsException caught");
         }catch (Exception ex){
             ex.printStackTrace();
+        }finally {
+            return map;
         }
-
     }
 
     public String getFileName() {

@@ -1,23 +1,29 @@
-package db;
+package main.db;
 
-import db_interface.TestDataQueries;
-import main.InBalance;
-import utils.FileManagement;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import main.db_interface.TestDataQueries;
+import main.utils.FileManagement;
+import main.utils.PropertyLoader;
+
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by OS344312 on 9/7/2016.
  */
 
-public class DBMethods extends InBalance implements TestDataQueries {
+public class DBMethods implements TestDataQueries {
+
+    public static final PropertyLoader property= new PropertyLoader();
+
+    public static final String DRIVER_URL =property.loadProperty("inbalance.conn.driver");
+    public static final String CONNECTION_URL=property.loadProperty("inbalance.conn.url");
+    public static final String CONNECTION_USERNAME=property.loadProperty("inbalance.conn.username");
+    public static final String CONNECTION_PASSWORD=property.loadProperty("inbalance.conn.password");
 
     private Connection connection;
 
@@ -81,7 +87,8 @@ public class DBMethods extends InBalance implements TestDataQueries {
         return list;
     }
 
-    public void getRequestMessage() {
+    public Map<String,String> getRequestMessage() {
+        Map<String,String> mapReq=null;
         PreparedStatement inbalance = null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -93,7 +100,7 @@ public class DBMethods extends InBalance implements TestDataQueries {
                 iCount++;
                 String requestXML = resultSet.getString("MESSAGE");
                 fm.createRequestFile(requestXML,iCount);
-                fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(iCount)+".xml");
+                mapReq= fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Request"+ Integer.toString(iCount)+".xml");
                 //System.out.println(requestXML);
             }
             //ArrayList<HashMap> list = resultSetToArrayList(resultSet);
@@ -102,10 +109,13 @@ public class DBMethods extends InBalance implements TestDataQueries {
             //return list;
         }catch (SQLException ex){
             //return null;
+        }finally {
+            return mapReq;
         }
     }
 
-    public void getResponseMessage(){
+    public Map<String,String> getResponseMessage(){
+        Map<String,String> mapRes=null;
         PreparedStatement sRespose=null;
         ResultSet resultSet=null;
         int iCount=0;
@@ -117,7 +127,7 @@ public class DBMethods extends InBalance implements TestDataQueries {
                 iCount++;
                 String responseXML = resultSet.getString("MESSAGE");
                 fm.createResponseFile(responseXML,iCount);
-                fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(iCount)+".xml");
+                mapRes=fm.parseFile(System.getProperty("user.dir") + "\\temporal\\"+"Response"+ Integer.toString(iCount)+".xml");
                 //System.out.println(requestXML);
             }
             ArrayList<HashMap> list = resultSetToArrayList(resultSet);
@@ -125,7 +135,10 @@ public class DBMethods extends InBalance implements TestDataQueries {
             closeOpenConnections();
         }catch (SQLException ex){
 
+        }finally {
+            return mapRes;
         }
+
     }
 
     public void closeOpenConnections(){
