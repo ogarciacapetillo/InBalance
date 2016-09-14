@@ -2,36 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb3ad533-d842-42e8-9966-ca950486266a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Response2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Response3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Response4.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InBalanceAutomation/main/InBalance.class" afterPath="$PROJECT_DIR$/out/production/InBalanceAutomation/main/InBalance.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request19.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temporal/Request9.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/InBalance.properties" afterPath="$PROJECT_DIR$/resource/InBalance.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/InBalance.java" afterPath="$PROJECT_DIR$/src/main/InBalance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/db/DBMethods.java" afterPath="$PROJECT_DIR$/src/main/db/DBMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/utils/FileManagement.java" afterPath="$PROJECT_DIR$/src/main/utils/FileManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/utils/Handler.java" afterPath="$PROJECT_DIR$/src/main/utils/Handler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/utils/HashMapCompare.java" afterPath="$PROJECT_DIR$/src/main/utils/HashMapCompare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/utils/XMLParser.java" afterPath="$PROJECT_DIR$/src/main/utils/XMLParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java" afterPath="$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request1.xml" afterPath="$PROJECT_DIR$/temporal/Request1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request10.xml" afterPath="$PROJECT_DIR$/temporal/Request10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request11.xml" afterPath="$PROJECT_DIR$/temporal/Request11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request12.xml" afterPath="$PROJECT_DIR$/temporal/Request12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request13.xml" afterPath="$PROJECT_DIR$/temporal/Request13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request14.xml" afterPath="$PROJECT_DIR$/temporal/Request14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request15.xml" afterPath="$PROJECT_DIR$/temporal/Request15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request16.xml" afterPath="$PROJECT_DIR$/temporal/Request16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request17.xml" afterPath="$PROJECT_DIR$/temporal/Request17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request18.xml" afterPath="$PROJECT_DIR$/temporal/Request18.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request19.xml" afterPath="$PROJECT_DIR$/temporal/Request19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request2.xml" afterPath="$PROJECT_DIR$/temporal/Request2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request3.xml" afterPath="$PROJECT_DIR$/temporal/Request3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request4.xml" afterPath="$PROJECT_DIR$/temporal/Request4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request5.xml" afterPath="$PROJECT_DIR$/temporal/Request5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request6.xml" afterPath="$PROJECT_DIR$/temporal/Request6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request7.xml" afterPath="$PROJECT_DIR$/temporal/Request7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request8.xml" afterPath="$PROJECT_DIR$/temporal/Request8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Request9.xml" afterPath="$PROJECT_DIR$/temporal/Request9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temporal/Response1.xml" afterPath="$PROJECT_DIR$/temporal/Response1.xml" />
     </list>
     <ignored path="InBalanceAutomation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InBalance.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InBalance.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/InBalance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -66,35 +60,19 @@
       <file leaf-file-name="DBMethods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/db/DBMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1100">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-              <folding>
-                <element signature="e#3731#3756#0" expanded="true" />
-                <element signature="e#3841#3877#0" expanded="true" />
-                <element signature="e#5131#5167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMapCompare.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/utils/HashMapCompare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+            <state relative-caret-position="378">
+              <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileManagement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/utils/FileManagement.java">
+      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/utils/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="38" column="32" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/PropertyLoader.java" />
         <option value="$PROJECT_DIR$/src/TestDataQueries.java" />
         <option value="$PROJECT_DIR$/src/DBMethods.java" />
-        <option value="$PROJECT_DIR$/resource/InBalance.properties" />
         <option value="$PROJECT_DIR$/src/utils/PropertyLoader.java" />
         <option value="$PROJECT_DIR$/temporal/Temp.xml" />
         <option value="$PROJECT_DIR$/src/utils/SourceXML.java" />
@@ -133,13 +110,14 @@
         <option value="$PROJECT_DIR$/src/utils/FileManagement.java" />
         <option value="$PROJECT_DIR$/src/db/DBMethods.java" />
         <option value="$PROJECT_DIR$/src/utils/XMLParser.java" />
-        <option value="$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java" />
         <option value="$PROJECT_DIR$/src/main/utils/Handler.java" />
-        <option value="$PROJECT_DIR$/src/main/InBalance.java" />
         <option value="$PROJECT_DIR$/src/main/db/DBMethods.java" />
         <option value="$PROJECT_DIR$/src/main/utils/XMLParser.java" />
         <option value="$PROJECT_DIR$/src/main/utils/FileManagement.java" />
         <option value="$PROJECT_DIR$/src/main/utils/HashMapCompare.java" />
+        <option value="$PROJECT_DIR$/resource/InBalance.properties" />
+        <option value="$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java" />
+        <option value="$PROJECT_DIR$/src/main/InBalance.java" />
       </list>
     </option>
   </component>
@@ -175,7 +153,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -311,22 +288,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InBalanceAutomation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InBalanceAutomation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -622,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473429960929</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Complete">
+      <created>1473448877545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1473448877545</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -634,19 +605,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833022" sideWeight="0.48541668" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35928705" sideWeight="0.28802082" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29268292" sideWeight="0.29739583" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35928705" sideWeight="0.71197915" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29268292" sideWeight="0.7026042" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1328125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55253285" sideWeight="0.6927083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35084426" sideWeight="0.68541664" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -654,6 +624,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -668,13 +639,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Updates to bring hash map compare" />
     <MESSAGE value="New Compare Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Compare Class" />
+    <MESSAGE value="Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="65" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java</url>
+          <line>12</line>
+          <properties field="getRequestQuery" class="main.db_interface.TestDataQueries" />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -704,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +700,7 @@
         <state relative-caret-position="646">
           <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,9 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +734,7 @@
         <state relative-caret-position="646">
           <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -780,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="56" column="101" selection-start-line="56" selection-start-column="101" selection-end-line="56" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +768,7 @@
         <state relative-caret-position="187">
           <caret line="14" column="128" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="128" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,13 +813,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/db/DBMethods.java" />
-    <entry file="file://$PROJECT_DIR$/resource/InBalance.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/org/xml/sax/Attributes.class" />
     <entry file="file://$PROJECT_DIR$/temporal/Temp.xml" />
     <entry file="file://$PROJECT_DIR$/temporal/Response.xml" />
@@ -860,42 +822,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="56" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="192" selection-start-line="9" selection-start-column="192" selection-end-line="9" selection-end-column="192" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temporal/Response4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/temporal/Response4.xml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/parsers/AbstractSAXParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/utils/SourceXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="173" column="20" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,39 +844,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temporal/Response3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/temporal/Response3.xml" />
     <entry file="file://$PROJECT_DIR$/temporal/Response1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temporal/Response2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/temporal/Response2.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/utils/PropertyLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="55" column="15" selection-start-line="53" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,77 +867,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
           <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/db/DBMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1100">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding>
-            <element signature="e#3731#3756#0" expanded="true" />
-            <element signature="e#3841#3877#0" expanded="true" />
-            <element signature="e#5131#5167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/InBalance.java">
+    <entry file="file://$PROJECT_DIR$/src/main/utils/SourceXML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/utils/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/utils/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="26" />
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#797#813#0" expanded="true" />
-            <element signature="e#882#906#0" expanded="true" />
-            <element signature="e#2130#2146#0" expanded="true" />
-            <element signature="e#3017#3018#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/utils/FileManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temporal/Result.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/utils/HashMapCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+        <state relative-caret-position="680">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/utils/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/db_interface/TestDataQueries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/InBalance.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/utils/FileManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/db/DBMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/utils/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/InBalance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
           <folding />
         </state>
       </provider>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Promise OrderDate="2016-09-08T02:10:00-04:00" OrderNo="Y100082229">
+<Promise OrderDate="2016-09-13T03:10:00-04:00" OrderNo="Y100086216">
     <PromiseLines>
-        <PromiseLine ItemID="92800366" LineId="201609080732193165119126">
+        <PromiseLine ItemID="90517654" LineId="201609140540203166967542">
             <PossibleAssignments>
-                <Assignment AssignmentKey="859::::20160908000000" RejectChoice="N">
+                <Assignment AssignmentKey="873::::20160914000000" RejectChoice="N">
                     <Costs AssignmentPriority="1"/>
                 </Assignment>
-                <Assignment AssignmentKey="869::::20160908000000" RejectChoice="Y"/>
+                <Assignment AssignmentKey="809::::20160914000000" RejectChoice="Y"/>
             </PossibleAssignments>
         </PromiseLine>
     </PromiseLines>

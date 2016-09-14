@@ -26,14 +26,16 @@ public class InBalance {
 
         DBMethods dbMethods;
         dbMethods = new DBMethods();
+        HashMapCompare comparator = new HashMapCompare();
         requestMap = dbMethods.getRequestMessage();
         System.out.println("-----------------------------------------");
         responseMap = dbMethods.getResponseMessage();
-        HashMapCompare comparator = new HashMapCompare();
         comparator.compareMaps(requestMap,responseMap);
-        System.out.println(requestMap.size());
-        System.out.println(responseMap.size());
-        System.out.print("Complete");
+        //System.out.println(requestMap.size());
+        //System.out.println(responseMap.size());
+        System.out.println("-----------------------------------------");
+        System.out.println("---------------- Complete ---------------");
+        System.out.println("-----------------------------------------");
     }
 
 }
