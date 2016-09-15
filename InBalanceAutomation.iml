@@ -17,5 +17,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="poi-3.9-sources" level="project" />
   </component>
 </module>

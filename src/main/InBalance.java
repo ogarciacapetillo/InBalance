@@ -27,6 +27,7 @@ public class InBalance {
         DBMethods dbMethods;
         dbMethods = new DBMethods();
         HashMapCompare comparator = new HashMapCompare();
+        // Read Excel File and extract the order numbers pass. and execute the process for that particular order
         requestMap = dbMethods.getRequestMessage();
         System.out.println("-----------------------------------------");
         responseMap = dbMethods.getResponseMessage();

@@ -117,9 +117,10 @@ public class DBMethods implements TestDataQueries {
         ResultSet resultSet=null;
         int iCount=0;
         try{
+            FileManagement fm = new FileManagement();
+            fm.readInputFile();
             inbalance = connectDB().prepareStatement(getRequestQuery);
             resultSet = inbalance.executeQuery();
-            FileManagement fm = new FileManagement();
             while (resultSet.next()){
                 iCount++;
                 String requestXML = resultSet.getString("MESSAGE");
